@@ -2,6 +2,7 @@
   "name": "mobile-view-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alexander-svendsen.github.io/mobile-view-test",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
