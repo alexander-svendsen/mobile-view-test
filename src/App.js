@@ -24,7 +24,30 @@ function Default(props) {
             </header>
             <button className={"myButton"} onClick={() => props.onClick(1)}>Flex</button>
             <button className={"myButton"} onClick={() => props.onClick(2)}>FlexViewHeight</button>
+            <button className={"myButton"} onClick={() => props.onClick(3)}>Sticky</button>
         </div>
+    )
+}
+
+function Sticky(props) {
+    return (
+        <div>
+            <div id="header" className="row">
+                <p><b>header</b>
+                    <br/>
+                    <br/>(sized to content)</p>
+            </div>
+            <div id="content" className="row">
+                <p>
+                    <b>content</b>
+                    (fills remaining space)
+                </p>
+            </div>
+            <div id="footer" className="row">
+                <p><b>footer</b> (fixed height)</p>
+            </div>
+        </div>
+
     )
 }
 
@@ -39,6 +62,9 @@ function App() {
     }
     else if (view === 2) {
         return <FlexViewHeight/>
+    }
+    else if (view === 3) {
+        return <Sticky/>
     }
 
     return null;

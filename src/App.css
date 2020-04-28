@@ -59,7 +59,6 @@
 }
 
 
-html,
 body {
   height: 100%;
   margin: 0
@@ -71,7 +70,7 @@ body {
   height: 100%;
 }
 
-.box .row {
+.row {
   border: 1px dotted grey;
 }
 
@@ -96,4 +95,19 @@ body {
 .my-element {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100) !important;
+}
+
+
+#header,#footer,#content { position:absolute; right:0;left:0}
+
+#header{
+  height:100px; top:0;
+}
+#footer{
+  height:100px; bottom:0;
+}
+#content{
+  top:100px;
+  bottom:100px;
+  overflow:hidden; /* use this if don't want any window scrollbars and use an inner element for scrolling*/
 }
